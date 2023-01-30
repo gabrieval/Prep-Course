@@ -85,7 +85,7 @@ function agregarNumeros(numeros) {
   // Tu código:
   var suma = 0;
   for (var i = 0; i < numeros.length; i ++){
-    suma = suma + numero [i];
+    suma = suma + numeros [i];
   }
   return suma;
 
@@ -104,9 +104,9 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-  var maximo = numero [0];
+  var maximo = numeros [0];
   for (var i = 0; i < numeros.length; i++){
-    if (numeros [i > maximo]){
+    if (numeros [i] > maximo){
       maximo = numeros [i];
     }
   } 
@@ -158,7 +158,7 @@ function empiezaConNueve(n) {
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
   var numero = n.toString().split ("");
-  if (numero [0] === 9) return true;
+  if (numero [0] == 9) return true;
   return false;  
 }
 
@@ -234,11 +234,11 @@ function continueStatement(numero) {
   // Tu código:
 let nuevoContinue = [];
 for (var i = 0 ; i < 10 ; i++){
-  if (i === 5){
+  if (i == 5){
     continue;
   }
-  numero = numero +2;
-  nuevoContinue.push (numero [i])
+  numero = numero + 2;
+  nuevoContinue.push (numero)
 
 }
 return nuevoContinue;
